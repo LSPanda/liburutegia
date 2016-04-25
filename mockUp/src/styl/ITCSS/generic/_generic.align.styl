@@ -1,0 +1,14 @@
+///*------------------------------------*\
+//    #GENERIC ALIGN
+//\*------------------------------------*/
+
+
+
+
+// Keep same align after all my elements
+ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre
+    rem-fallback( margin-bottom, value_line-height( wf_line-height, 2 ) )
+
+// Keep same indentation with my list
+ul, ol, dd
+    rem-fallback( margin-left, value_line-height( wf_line-height, 4 ) )

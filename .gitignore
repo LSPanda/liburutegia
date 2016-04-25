@@ -1,0 +1,37 @@
+#############
+## Clean Grunt files
+#############
+
+npm-debug.log
+mockUp/node_modules
+mockUp/bin/js/script-min.js
+mockUp/bin/css/*.css
+mockUp/bin/index.html
+mockUp/bin/html
+
+
+#############
+## Clean hidden files from OSX
+#############
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

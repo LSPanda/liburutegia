@@ -1,0 +1,49 @@
+///*------------------------------------*\
+//    #COMPONENTS HEADER
+//\*------------------------------------*/
+
+
+
+
+// Style for display my header
+.header
+    width 100%
+    background-color wf_header-background-color
+    rem-fallback( padding, 16px 24px )
+.header__wrap
+    width 960px
+    margin 0 auto
+    position relative
+
+.header__profil
+    display block
+    position absolute
+    rem-fallback( top, -28px )
+    right 0
+    rem-fallback( padding, 24px 20px 8px )
+    background-color wf_account-background-color
+
+.header__info
+    display block
+.header__title
+    display inline-block
+    float left
+.header__search
+    display inline-block
+    float right
+
+.header__navigation
+    display block
+    text-align left
+
+// Display my title
+.title__words, .title__header
+    display block
+    font-weight bold
+    text-transform uppercase
+    color wf_header-color
+.title__words
+    rem-fallback( font-size, 37.5px )
+.title__header
+    rem-fallback( font-size, 36.5px )
+    rem-fallback( margin-top, -24px )

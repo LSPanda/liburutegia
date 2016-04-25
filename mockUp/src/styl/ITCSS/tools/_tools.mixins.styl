@@ -1,0 +1,50 @@
+///*------------------------------------*\
+//    #TOOLS MIXINS
+//\*------------------------------------*/
+
+
+
+
+
+// Add prefix for `transition` rules
+transition( where, times )
+    -webkit-transition: where times
+    -moz-transition:    where times
+    -ms-transition:     where times
+    transition:         where times
+
+// Add prefix for `border-radius` rules, same for each corner
+border-radius( size )
+    -webkit-border-radius: size
+    -moz-border-radius:    size
+    -ms-border-radius:     size
+    border-radius:         size
+
+// Add prefix for `border-radius` rules, for different corner
+border-radiuses( topright, bottomright, bottomleft, topleft )
+    -webkit-border-top-right-radius    topright
+    -webkit-border-bottom-right-radius bottomright
+    -webkit-border-bottom-left-radius  bottomleft
+    -webkit-border-top-left-radius     topleft
+
+    -moz-border-top-right-radius    topright
+    -moz-border-bottom-right-radius bottomright
+    -moz-border-bottom-left-radius  bottomleft
+    -moz-border-top-left-radius     topleft
+
+    -o-border-top-right-radius    topright
+    -o-border-bottom-right-radius bottomright
+    -o-border-bottom-left-radius  bottomleft
+    -o-border-top-left-radius     topleft
+
+    border-top-right-radius    topright
+    border-bottom-right-radius bottomright
+    border-bottom-left-radius  bottomleft
+    border-top-left-radius     topleft
+
+// Add prefix for `box-shadows` rules
+box-shadows( angle, blur, color, opa )
+    -webkit-box-shadow: angle angle blur 0px rgba(color, color, color, opa)
+    -moz-box-shadow:    angle angle blur 0px rgba(color, color, color, opa)
+    -ms-box-shadow:     angle angle blur 0px rgba(color, color, color, opa)
+    box-shadow:         angle angle blur 0px rgba(color, color, color, opa)

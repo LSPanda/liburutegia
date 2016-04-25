@@ -1,0 +1,40 @@
+///*------------------------------------*\
+//    #BASE LINK
+//\*------------------------------------*/
+
+
+
+
+// Remove default style for link
+.removeLink
+    color inherit
+    text-decoration none
+    &:hover
+        color inherit
+
+// Basic link comportement
+a
+    font-style italic
+    color wf_link-color
+    transition( all, 0.25s )
+    &:hover
+        color wf_link-color-hover
+        text-decoration underline
+
+// Transition for my border's link
+.animateLink
+    display inline-block
+    position relative
+    rem-fallback( padding-bottom, 3px )
+    &:after
+        content ''
+        display block
+        position absolute
+        right 0
+        bottom 0
+        width 0
+        rem-fallback( height, 3px )
+        transition( ease, 0.25s )
+    &:hover:after
+        width 100%
+        background wf_border-animate_link

@@ -1,0 +1,41 @@
+///*------------------------------------*\
+//    #BASE FORMS
+//\*------------------------------------*/
+
+
+
+
+// Add font to my input and fix widths
+input, textarea
+    max-width 100%
+    max-height 100%
+    font-family wf_font-labeur
+    rem-fallback( font-size, wf_font-size )
+    resize none
+
+input[type="submit"]
+    font-family wf_font-heading
+    rem-fallback( font-size, wf_font-size * 1.25 )
+
+    +media-query( screen, max-width 960px )
+        rem-fallback( font-size, wf_font-size )
+
+//Change color of placehoder for FireFox
+input:-moz-placeholder
+    color wf_form-placeholder-color
+textarea:-moz-placeholder
+    color wf_form-placeholder-color
+input::-moz-placeholder
+    color wf_form-placeholder-color
+textarea::-moz-placeholder
+    color wf_form-placeholder-color
+//Change color of placehoder for Chrome and Opera
+input::-webkit-input-placeholder
+    color wf_form-placeholder-color
+textarea::-webkit-input-placeholder
+    color wf_form-placeholder-color
+//Change color of placehoder for IE
+input:-ms-input-placeholder
+    color wf_form-placeholder-color
+textarea:-ms-input-placeholder
+    color wf_form-placeholder-color

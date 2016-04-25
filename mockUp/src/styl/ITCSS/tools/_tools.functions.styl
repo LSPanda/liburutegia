@@ -1,0 +1,36 @@
+///*------------------------------------*\
+//    #TOOLS FUNCTIONS
+//\*------------------------------------*/
+
+
+
+
+
+// Remove units of a number
+strip-units( val )
+    unit( val, "" )
+
+// Calc my line-height
+calc_line-height( val1, val2 )
+    strip-units( val1 ) / strip-units( val2 )
+
+// Cacl value in pixel based on my line-height
+value_line-height( my-line-height, modulo )
+    my-line-height / modulo
+
+// Converse PX to REM with PX fallback
+rem-fallback( property, arguments )
+    px-fall  = arguments
+    rem-fall = ""
+
+    for argument in arguments
+        value = strip-units( argument )
+        base  = strip-units( wf_font-size )
+
+        if rem-fall == null
+            rem-fall = value / base * 1rem
+        else
+            rem-fall += " " + value / base * 1rem
+
+    {property} px-fall
+    {property} unquote( rem-fall )

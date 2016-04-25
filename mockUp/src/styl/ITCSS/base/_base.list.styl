@@ -1,0 +1,14 @@
+///*------------------------------------*\
+//    #BASE LISTS
+//\*------------------------------------*/
+
+
+
+
+// Rules for my list
+li > ul, li > ol
+    rem-fallback( margin-bottom, value_line-height( wf_margin-spacing, 5 ) )
+
+ul > li, ol > li
+    &:before
+        content wf_list-element

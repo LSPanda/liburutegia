@@ -1,0 +1,21 @@
+{
+    "name": "liburutegia",
+    "version": "0.0.1",
+    "private": true,
+    "author": {
+        "name": "Simon",
+        "email": "sim.leyder@gmail.com",
+        "url": "http://portfolio.simon-leyder.be"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.0",
+        "grunt-contrib-jade": "^1.0.0",
+        "kouto-swiss": "^0.12.0",
+        "grunt-contrib-stylus": "^1.2.0",
+        "grunt-contrib-uglify": "^1.0.1",
+        "grunt-notify": "^0.4.5",
+        "grunt-contrib-watch": "^1.0.0"
+    },
+    "dependencies": {},
+    "description": "Élaboration d'une bibliothèque en PHP dans le cadre de ma formation scolaore."
+}
