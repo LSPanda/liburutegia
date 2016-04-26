@@ -6,14 +6,14 @@ block title
     title Accueil
     
 block style
-    link(rel="stylesheet" href="css/main-min.css")
+    link(rel="stylesheet" href="../css/main-min.css")
 
 block header
-    - var current = { main : 'home' }
+    - var current = { login : 'account' }
     include includes/header.jade
     
 block content
-    p Template personnel de maquette, utilisant Jade et Stylus.
+    p Ici se trouve le formulaire de connexion.
 
 block footer
     include includes/footer.jade

@@ -3,24 +3,45 @@
 header.header
     div.header__wrap
         div.header__profil
-            span.profil__account
-                a(href="#").navigation__link.animateLink Mon compte
+            if current.main
+                span.profil__account
+                    a(href="html/login.html").navigation__link.animateLink Mon compte
+            else
+                span.profil__account
+                    a(href="login.html").navigation__link.animateLink Mon compte
         div.header__info.clearfix
             div.header__title
                 h1.title__words 
                     | Mon espace
                     span.title__header Liburutegia
-            div.header__search
-                form.search__form
-                    label(for="search").input__text--label Rechercher
-                    input(id="search" placeholder="Un livre, un auteur, un établissements, ...").input__text--search
-                    input(itemprop="target" type="submit" value="Rechercher").input__text--submit
+            if !current.main
+                div.header__search
+                    form.search__form
+                        label(for="search").input__text--label Rechercher
+                        input(id="search" placeholder="Un livre, un auteur, un établissements, ...").input__text--search
+                        input(itemprop="target" type="submit" value="Rechercher").input__text--submit
         nav.header__navigation
-            span.navigation__block
-                a(href="#").animateLink.navigation__link Accueil
-            span.navigation__block
-                a(href="#").animateLink.navigation__link Établissements
-            span.navigation__block
-                a(href="#").animateLink.navigation__link Livres
-            span.navigation__block
-                a(href="#").animateLink.navigation__link Auteurs        
+            if current.main
+                span.navigation__block
+                    a(href="index.html").animateLink.navigation__link Accueil
+            else
+                span.navigation__block
+                    a(href="../index.html").animateLink.navigation__link Accueil
+            if current.main
+                span.navigation__block
+                    a(href="html/library.html").animateLink.navigation__link Établissements
+            else
+                span.navigation__block
+                    a(href="library.html").animateLink.navigation__link Établissements
+            if current.main
+                span.navigation__block
+                    a(href="html/books.html").animateLink.navigation__link Livres
+            else
+                span.navigation__block
+                    a(href="books.html").animateLink.navigation__link Livres
+            if current.main
+                span.navigation__block
+                    a(href="html/authors.html").animateLink.navigation__link Auteurs        
+            else
+                span.navigation__block
+                    a(href="authors.html").animateLink.navigation__link Auteurs        

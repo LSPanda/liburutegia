@@ -3,13 +3,27 @@
 footer.footer
     div.footer__wrap
         div.footer__navigation
-            span.navigation__block
-                a(href="#").item__nav--footer.animateLink.navigation__link Accueil
-            span.navigation__block
-                a(href="#").item__nav--footer.animateLink.navigation__link Établissements
-            span.navigation__block
-                a(href="#").item__nav--footer.animateLink.navigation__link Livres
-            span.navigation__block
-                a(href="#").item__nav--footer.animateLink.navigation__link Auteurs
-            
-        
+            if current.main
+                span.navigation__block
+                    a(href="index.html").item__nav--footer.animateLink.navigation__link Accueil
+            else
+                span.navigation__block
+                    a(href="../index.html").item__nav--footer.animateLink.navigation__link Accueil
+            if current.main
+                span.navigation__block
+                    a(href="html/library.html").item__nav--footer.animateLink.navigation__link Établissements
+            else
+                span.navigation__block
+                    a(href="library.html").item__nav--footer.animateLink.navigation__link Établissements
+            if current.main
+                span.navigation__block
+                    a(href="html/books.html").item__nav--footer.animateLink.navigation__link Livres
+            else
+                span.navigation__block
+                    a(href="books.html").item__nav--footer.animateLink.navigation__link Livres
+            if current.main
+                span.navigation__block
+                    a(href="html/authors.html").item__nav--footer.animateLink.navigation__link Auteurs        
+            else
+                span.navigation__block
+                    a(href="authors.html").item__nav--footer.animateLink.navigation__link Auteurs        
