@@ -3,7 +3,7 @@
 extends includes/layout
 
 block title
-    title Accueil
+    title Liburutegia - Accueil
     
 block style
     link(rel="stylesheet" href="css/main-min.css")
@@ -13,7 +13,34 @@ block header
     include includes/header.jade
     
 block content
-    p Template personnel de maquette, utilisant Jade et Stylus.
+    div.home__search
+        div.home__search--block
+            form.search__form
+                label(for="search").input__text--label Rechercher
+                input(id="search" placeholder="Un livre, un auteur, un établissements, ...").input__text--search
+                input(itemprop="target" type="submit" value="Rechercher").input__text--submit
+    div.clearfix    
+        div.home__path
+            div.home__path--image
+                img(src="", alt="")
+            div.home__path--title
+                h2.gamma Établissements
+            div.home__path--body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque mollitia incidunt, nemo totam sit eligendi expedita, ducimus dolor accusantium ullam voluptate voluptas maiores modi deserunt saepe enim inventore quis.
+        div.home__path
+            div.home__path--image
+                img(src="", alt="")
+            div.home__path--title
+                h2.gamma Établissements
+            div.home__path--body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque mollitia incidunt, nemo totam sit eligendi expedita, ducimus dolor accusantium ullam voluptate voluptas maiores modi deserunt saepe enim inventore quis.
+        div.home__path
+            div.home__path--image
+                img(src="", alt="")
+            div.home__path--title
+                h2.gamma Établissements
+            div.home__path--body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque mollitia incidunt, nemo totam sit eligendi expedita, ducimus dolor accusantium ullam voluptate voluptas maiores modi deserunt saepe enim inventore quis.
 
 block footer
     include includes/footer.jade
